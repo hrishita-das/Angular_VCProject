@@ -63,6 +63,8 @@
          <h4>Are you sure you want to delete this item?</h4>
       </div>
       <div class="modal-footer">
+        <button (click)="deleteTheme(theme.id)">Delete</button>
+        <button (click)="editTheme(theme.id)">Edit</button>
         <button type="button" class="btnCancel" data-dismiss="modal" (click)="CloseRemoveMissionThemeModal()"><span class="Cancel"> Cancel</span> </button>
         <button type="button" class="btnRemove"><span class="remove" (click)=" DeleteMissionTheme()">Delete</span></button>
       </div>

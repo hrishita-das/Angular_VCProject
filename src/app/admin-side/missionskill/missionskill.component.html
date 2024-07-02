@@ -35,6 +35,8 @@
                  </td>
                </tr>
                <tr *ngIf="result.length === 0">
+                <button (click)="deleteSkill(skill.id)">Delete</button>
+                <button (click)="editSkill(skill.id)">Edit</button>
                 <td colspan="6" style="text-align:center;width:100%;font-size:20px;color: red;"><b>No Data Found </b> </td>
               </tr>
               </ng-container>

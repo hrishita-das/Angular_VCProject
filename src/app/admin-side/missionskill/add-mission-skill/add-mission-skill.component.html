@@ -20,6 +20,14 @@
                     </select>
                     <span class="text-danger" *ngIf="addMissionSkillForm.controls['status'].dirty && addMissionSkillForm.hasError('required','status')">
                       Status is required
+                  
+                      <div class="col-sm-6">
+                        <label for="status">Status</label>
+                        <select id="status" [(ngModel)]="user.status" name="status">
+                          <option [value]="true">Active</option>
+                          <option [value]="false">Inactive</option>
+                        </select>
+                      </div>
                     </span>
                   </div>
                 </div>

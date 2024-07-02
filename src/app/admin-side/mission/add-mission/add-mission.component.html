@@ -20,6 +20,16 @@
                           Please Select Country
                         </span>
                     </div>
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <label for="missionTitle">Mission Title</label>
+                        <input id="missionTitle" type="text" [(ngModel)]="mission.title">
+                      </div>
+                      <div class="col-sm-6">
+                        <label for="missionTheme">Mission Theme</label>
+                        <input id="missionTheme" type="text" [(ngModel)]="mission.theme">
+                      </div>
+                    </div>
                     <div class="col-sm-6">
                       <label class="col-form-label">City</label>
                       <select class="form-select" formControlName="cityId">

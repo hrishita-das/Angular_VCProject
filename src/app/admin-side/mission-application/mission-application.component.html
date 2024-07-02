@@ -43,6 +43,7 @@
                </tr>
                <tr *ngIf="result.length === 0">
                 <td colspan="6" style="text-align:center;width:100%;font-size:20px;color: red;"><b>No Data Found </b> </td>
+                <button (click)="editmission(mission.id)">Edit</button>
               </tr>
               </ng-container>
              </tbody>
